@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Daily Journal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Journal</h1>
+        <div class="journal-entry">
+            <textarea id="entryText" placeholder="Write your journal entry..."></textarea>
+            <input type="file" id="imageInput" accept="image/*">
+            <input type="text" id="tags" placeholder="Add tags (comma separated)">
+            <select id="mood">
+                <option value="">Select Mood</option>
+                <option value="Happy">😊 Happy</option>
+                <option value="Sad">😢 Sad</option>
+                <option value="Excited">😃 Excited</option>
+                <option value="Angry">😡 Angry</option>
+                <option value="Neutral">😐 Neutral</option>
+            </select>
+            <button id="saveButton">Save Entry</button>
+        </div>
+        <h2>Previous Entries</h2>
+        <div id="entriesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
